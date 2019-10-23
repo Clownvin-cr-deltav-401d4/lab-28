@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> renders consistently 1`] = `
+<form
+  id="todoForm"
+  onSubmit={[Function]}
+>
+  <input
+    id="item"
+    placeholder="Add To Do List Item"
+  />
+</form>
+`;

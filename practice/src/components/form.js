@@ -2,8 +2,22 @@ import React from 'react';
 
 class Form extends React.Component {
 
+  onSubmit = e => {
+    e.preventDefault();
+  }
+
+  onChange = e => {
+    this.props.do(e.target.value);
+  }
+
   render() {
-    return null;
+    return (
+      <>
+        <form onSubmit={this.onSubmit}>
+          <input type='text' onChange={this.onChange} />
+        </form>
+      </>
+    );
   }
 
 }
