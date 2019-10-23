@@ -9,11 +9,9 @@ class Form extends React.Component {
 
   render() {
     return (
-      <>
-        <form onSubmit={this.onSubmit} id="todoForm">
-          <input id="item" placeholder="Add To Do List Item" ref='input'/>
-        </form>
-      </>
+      <form onSubmit={this.onSubmit} id="todoForm">
+        <input id="item" placeholder="Add To Do List Item" ref='input'/>
+      </form>
     )
   }
 }

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoItem /> renders consistently 1`] = `
+<li
+  className="complete-false"
+>
+  <span
+    id={0}
+    onClick={[Function]}
+  >
+    Test
+  </span>
+  <button
+    onClick={[Function]}
+  >
+    delete
+  </button>
+</li>
+`;
