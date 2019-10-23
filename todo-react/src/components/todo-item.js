@@ -14,14 +14,12 @@ class TodoItem extends React.Component {
 
   render() {
     return (
-      <>
-        <li className={`complete-${this.props.item.complete}`}>
-          <span id={this.props.item.id} onClick={this.toggleComplete}>
-            {this.props.item.text}
-          </span>
-          <button onClick={this.delete}>delete</button>
-        </li>
-      </>
+      <li className={`complete-${this.props.item.complete}`}>
+        <span id={this.props.item.id} onClick={this.toggleComplete}>
+          {this.props.item.text}
+        </span>
+        <button onClick={this.delete}>delete</button>
+      </li>
     )
   }
 }

@@ -4,6 +4,8 @@ import Header from './components/header';
 import Form from './components/form';
 import TodoList from './components/todo-list';
 
+import './styles/app.scss';
+
 let id = 0;
 
 class App extends React.Component {
