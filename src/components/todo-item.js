@@ -12,13 +12,19 @@ class TodoItem extends React.Component {
     this.props.toggleComplete(this.props.item);
   }
 
+  showDetails = e => {
+    e.preventDefault();
+    this.props.showDetails(this.props.item);
+  }
+
   render() {
     return (
       <li className={`complete-${this.props.item.complete}`}>
         <span id={this.props.item.id} onClick={this.toggleComplete}>
           {this.props.item.text}
         </span>
-        <button onClick={this.delete}>delete</button>
+        <button onClick={this.showDetails}>Details</button>
+        <button onClick={this.delete}>Delete</button>
       </li>
     )
   }
