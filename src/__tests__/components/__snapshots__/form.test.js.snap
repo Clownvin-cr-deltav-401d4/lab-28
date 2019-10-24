@@ -8,6 +8,29 @@ exports[`<Form /> renders consistently 1`] = `
   <input
     id="item"
     placeholder="Add To Do List Item"
+    required={true}
+  />
+  <input
+    id="assigned-to"
+    placeholder="Assigned To"
+    required={true}
+  />
+  <input
+    id="difficulty"
+    max={5}
+    min={1}
+    placeholder="3"
+    required={true}
+    type="number"
+  />
+  <input
+    id="date"
+    required={true}
+    type="date"
+  />
+  <input
+    type="submit"
+    value="Submit"
   />
 </form>
 `;

@@ -26,7 +26,7 @@ describe('<TodoItem />', () => {
       deleted = true;
     };
     let app = shallow(<TodoItem item={({id: 0, text: 'Test', complete: false})} delete={deleteItem} toggleComplete={()=>{}} />);
-    let button = app.find('li button');
+    let button = app.find('li button.delete');
     button.simulate('click', {preventDefault: () =>{}});
     expect(deleted).toBeTruthy();
   });

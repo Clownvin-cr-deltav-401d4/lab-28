@@ -11,9 +11,16 @@ exports[`<TodoItem /> renders consistently 1`] = `
     Test
   </span>
   <button
+    className="details"
     onClick={[Function]}
   >
-    delete
+    Details
+  </button>
+  <button
+    className="delete"
+    onClick={[Function]}
+  >
+    Delete
   </button>
 </li>
 `;
