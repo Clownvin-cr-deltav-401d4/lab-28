@@ -23,8 +23,8 @@ class TodoItem extends React.Component {
         <span id={this.props.item.id} onClick={this.toggleComplete}>
           {this.props.item.text}
         </span>
-        <button onClick={this.showDetails}>Details</button>
-        <button onClick={this.delete}>Delete</button>
+        <button className="details" onClick={this.showDetails}>Details</button>
+        <button className="delete" onClick={this.delete}>Delete</button>
       </li>
     )
   }
